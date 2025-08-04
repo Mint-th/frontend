@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 
+
 export default function Navbar() {
   return (
 <nav className="navbar navbar-expand-lg bg-body-tertiary">
@@ -35,8 +36,8 @@ export default function Navbar() {
       <form className="d-flex" role="search">
         <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
         <button className="btn btn-outline-warning" type="submit">Search</button>
-        <button className="btn btn-outline-warning" type="submit">Login</button>
-        <button className="btn btn-outline-warning" type="submit">สมัคร</button>
+        <Link href="/login" className="btn relative btn-primary flex items-center justify-center px-4 py-2 rounded text-white bg-blue-600 hover:bg-blue-700">Login</Link>
+        <Link href="/register" className="btn relative btn-primary flex items-center justify-center px-4 py-2 rounded text-white bg-blue-600 hover:bg-blue-700">register</Link>
       </form>
     </div>
   </div>
