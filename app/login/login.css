@@ -1,85 +1,64 @@
-/* รีเซ็ตเบื้องต้น */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
 body {
-  background: linear-gradient(to right, #8e9eab, #eef2f3);
+  background: url('https://source.unsplash.com/featured/?technology') no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  font-family: 'Poppins', sans-serif;
 }
 
-/* กล่องฟอร์ม */
-.login-container {
-  background-color: white;
-  padding: 40px;
+.login-glass {
+  backdrop-filter: blur(12px);
+  background: rgba(255, 255, 255, 0.1);
   border-radius: 20px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  max-width: 380px;
   width: 100%;
-  max-width: 400px;
-}
-
-/* หัวเรื่อง */
-.login-container h2 {
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+  color: white;
   text-align: center;
-  margin-bottom: 30px;
-  font-size: 28px;
-  color: #333;
 }
 
-/* ช่องกรอก */
-.login-container input {
+.login-glass h2 {
+  margin-bottom: 25px;
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.login-glass input {
   width: 100%;
   padding: 12px 15px;
-  margin-bottom: 20px;
-  border: 1px solid #ccc;
-  border-radius: 12px;
-  font-size: 16px;
-  transition: border-color 0.3s ease;
+  margin: 12px 0;
+  border: none;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
 }
 
-.login-container input:focus {
-  outline: none;
-  border-color: #4a90e2;
-  box-shadow: 0 0 0 2px rgba(74, 144, 226, 0.2);
+.login-glass input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
 }
 
-/* ปุ่มล็อกอิน */
-.login-container button {
+.login-glass button {
   width: 100%;
   padding: 12px;
-  background-color: #4a90e2;
-  color: white;
+  background-color: #00c6ff;
   border: none;
-  border-radius: 12px;
-  font-size: 18px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.login-container button:hover {
-  background-color: #357ABD;
-}
-
-/* ลิงก์สมัครสมาชิก */
-.login-container .register-link {
+  border-radius: 10px;
   margin-top: 20px;
-  text-align: center;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.login-glass button:hover {
+  background-color: #0072ff;
+}
+
+.login-glass .link {
+  margin-top: 15px;
   font-size: 14px;
-  color: #777;
-}
-
-.login-container .register-link a {
-  color: #4a90e2;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-.login-container .register-link a:hover {
-  color: #357ABD;
+  color: #e0e0e0;
 }
