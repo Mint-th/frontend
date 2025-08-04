@@ -16,7 +16,7 @@
 
 /* ปรับ body ให้มี padding-top เท่ากับความสูงของ header */
 body {
-  margin: 0;
+  margin: 1;
   padding-top: 70px; /* ต้องเท่ากับ header สูงเท่าไหร่ */
   background: linear-gradient(to right, #c9d6ff, #e2e2e2);
   font-family: 'Segoe UI', sans-serif;
