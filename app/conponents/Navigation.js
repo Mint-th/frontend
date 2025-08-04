@@ -38,7 +38,7 @@ export default function Navbar() {
         <button className="btn btn-outline-warning" type="submit">Search</button>
         <Link href="/login" className="btn relative btn-primary flex items-center justify-center px-4 py-2 rounded text-white bg-blue-600 hover:bg-blue-700">Login</Link>
         <Link href="/register" className="btn relative btn-primary flex items-center justify-center px-4 py-2 rounded text-white bg-blue-600 hover:bg-blue-700">register</Link>
-      <Link href="/admin/users" className="btn relative btn-primary flex items-center justify-center px-4 py-2 rounded text-white bg-blue-600 hover:bg-blue-700">register</Link>
+      <Link href="/admin/users" className="btn relative btn-primary flex items-center justify-center px-4 py-2 rounded text-white bg-blue-600 hover:bg-blue-700">admin</Link>
       </form>
     </div>
   </div>
